@@ -64,8 +64,8 @@ const styles = StyleSheet.create({
         borderRadius: "20%",
         justifyContent: "center",
         alignItems: "center",
-        height:60,
-        width:60
+        height:65,
+        width:65
     },
     inputContainer: {
         flexDirection: "row",
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         paddingHorizontal: 25,
         marginHorizontal: 12,
-        height:60
+        height:65
     },
     messageContainer: {
         alignSelf: "flex-end",

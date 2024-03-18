@@ -63,7 +63,7 @@ export default function DevelopersScreen() {
           />
           <View style={styles.info}>
             <Text style={styles.name}>Delbin George</Text>
-            <Text style={styles.usn}>NNM23MC0_ _</Text>
+            <Text style={styles.usn}>NNM23MC036</Text>
             <View style={{ flexDirection: "row" }}>
               <Ionicons
                 style={{
@@ -101,8 +101,8 @@ export default function DevelopersScreen() {
             source={require("../../assets/female.png")}
           />
           <View style={styles.info}>
-            <Text style={styles.name}>Rakshitha Shetty</Text>
-            <Text style={styles.usn}>NNM23MC_ _ _</Text>
+            <Text style={styles.name}>Rakshitha M</Text>
+            <Text style={styles.usn}>NNM23MC111</Text>
             <View style={{ flexDirection: "row" }}>
               <Ionicons
                 style={{
