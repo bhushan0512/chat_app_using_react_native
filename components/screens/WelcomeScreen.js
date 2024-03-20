@@ -42,7 +42,7 @@ export default function WelcomeScreen() {
         style={{
           width: "80%",
           height: "40%",
-          resizeMode: "",
+          resizeMode: "cover",
           marginTop:"3%",
           marginBottom:"4%"
         }}
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
 
   headerText: {
     color: "#724cf9",
-    fontSize: "60%",
+    fontSize: 60,
     fontWeight: "800",
     marginLeft: "1%",
     // textDecorationLine: "underline",

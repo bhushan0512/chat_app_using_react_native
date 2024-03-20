@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SafeAreaView, View, TextInput, Text, StyleSheet, FlatList, TouchableOpacity, Dimensions, Image } from "react-native";
+import { SafeAreaView, View, TextInput, Text, StyleSheet, FlatList, TouchableOpacity, Dimensions, Image, ImageBackground, Animated } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 export default function ChatScreen() {
@@ -18,7 +18,7 @@ export default function ChatScreen() {
     };
 
     return (
-        <SafeAreaView style={styles.container}>
+        <View>
          <View  style={styles.title}>
          <Image
          style={{ height:50, width:50, padding:10, margin:15 }}
@@ -27,6 +27,11 @@ export default function ChatScreen() {
           />
          <Text style={styles.titileText}>(Unknown...)</Text>
          </View>
+
+        <ImageBackground
+        
+        style={{ height:"95%", width:"100%"}}
+        source={require("../../assets/bg.png")}>
             <FlatList
                 inverted
                 data={chat}
@@ -42,13 +47,14 @@ export default function ChatScreen() {
                     style={styles.input}
                     value={message}
                     onChangeText={setMessage}
+                    placeholderTextColor={"#555555"}
                     placeholder="Type your message here..."
                 />
                 <TouchableOpacity title="Send" style={styles.sendButton} onPress={sendMessage}>
                     <Ionicons name="paper-plane-outline" size={24} color="white" />
                 </TouchableOpacity>
+            </View></ImageBackground>
             </View>
-        </SafeAreaView>
     );
 }
 
@@ -70,8 +76,10 @@ const styles = StyleSheet.create({
     inputContainer: {
         flexDirection: "row",
         alignItems: "center",
-        marginTop: 10,
+        marginBottom: 100,
+        marginTop:10,
         paddingHorizontal: 10,
+        
     },
     input: {
         flex: 1,
@@ -82,11 +90,12 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         paddingHorizontal: 25,
         marginHorizontal: 12,
-        height:65
+        height:65,
+        backgroundColor:"#ffffff55"
     },
     messageContainer: {
         alignSelf: "flex-end",
-        marginVertical: 3,
+        marginVertical: 2,
         paddingRight:15,
         padding: 12,
         backgroundColor: "#724cf9",

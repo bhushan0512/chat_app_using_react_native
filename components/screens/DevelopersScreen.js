@@ -31,7 +31,7 @@ export default function DevelopersScreen() {
                   color: "#24292E",
                   padding: "2%",
                 }}
-                size={"25%"}
+                size={25}
                 name="logo-github"
               />
 
@@ -40,7 +40,7 @@ export default function DevelopersScreen() {
                   color: "#0a66c2",
                   padding: "2%",
                 }}
-                size={"25%"}
+                size={25}
                 name="logo-linkedin"
               />
 
@@ -49,7 +49,7 @@ export default function DevelopersScreen() {
                   color: "#C13584",
                   padding: "2%",
                 }}
-                size={"25%"}
+                size={25}
                 name="logo-instagram"
               />
             </View>
@@ -82,13 +82,12 @@ export default function DevelopersScreen() {
                 size={"25%"}
                 name="logo-linkedin"
               />
-
               <Ionicons
                 style={{
                   color: "#C13584",
-                  padding: "2%",
+                  padding: 2,
                 }}
-                size={"25%"}
+                size={25}
                 name="logo-instagram"
               />
             </View>
@@ -109,7 +108,7 @@ export default function DevelopersScreen() {
                   color: "#24292E",
                   padding: "2%",
                 }}
-                size={"25%"}
+                size={25}
                 name="logo-github"
               />
 
@@ -118,7 +117,7 @@ export default function DevelopersScreen() {
                   color: "#0a66c2",
                   padding: "2%",
                 }}
-                size={"25%"}
+                size={25}
                 name="logo-linkedin"
               />
 
@@ -127,7 +126,7 @@ export default function DevelopersScreen() {
                   color: "#C13584",
                   padding: "2%",
                 }}
-                size={"25%"}
+                size={25}
                 name="logo-instagram"
               />
             </View>
@@ -153,7 +152,7 @@ const styles = StyleSheet.create({
 
   headerText: {
     color: "#724cf9",
-    fontSize: "60%",
+    fontSize: 60,
     fontWeight: "800",
     marginLeft: "1%",
     // textDecorationLine: "underline",
@@ -164,8 +163,8 @@ const styles = StyleSheet.create({
     resizeMode: "contain",
   },
   avatar: {
-    width: 100,
-    height: 100,
+    width: 85,
+    height: 85,
     resizeMode: "contain",
     marginTop: 15,
     marginBottom: 15,
@@ -179,15 +178,15 @@ const styles = StyleSheet.create({
   card: {
     backgroundColor: "#EBE9FF",
     width: "90%",
-    height: "25%",
-    marginBottom: 20,
+    marginBottom: 18,
     borderRadius: 15,
     flexDirection: "row",
     alignItems: "center",
     paddingHorizontal: 20,
+    paddingVertical:3
   },
   name: {
-    fontSize: 18,
+    fontSize: 19,
     fontWeight: "bold",
     color: "#4361ee",
     letterSpacing: 1.1,
