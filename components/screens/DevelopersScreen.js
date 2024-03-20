@@ -63,7 +63,7 @@ export default function DevelopersScreen() {
           />
           <View style={styles.info}>
             <Text style={styles.name}>Delbin George</Text>
-            <Text style={styles.usn}>NNM23MC036</Text>
+            <Text style={styles.usn}>NNM23MC036 </Text>
             <View style={{ flexDirection: "row" }}>
               <Ionicons
                 style={{
