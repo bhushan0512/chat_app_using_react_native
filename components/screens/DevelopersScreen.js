@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, Linking, StyleSheet, Text, View } from "react-native";
 
 import { Ionicons } from "@expo/vector-icons";
 export default function DevelopersScreen() {
@@ -29,28 +29,37 @@ export default function DevelopersScreen() {
               <Ionicons
                 style={{
                   color: "#24292E",
-                  padding: "2%",
+                  padding:6,
                 }}
                 size={25}
                 name="logo-github"
+                onPress={()=>{
+                  Linking.openURL("https://github.com/bhushan0512");
+                }}
               />
 
               <Ionicons
                 style={{
                   color: "#0a66c2",
-                  padding: "2%",
+                  padding:6,
                 }}
                 size={25}
                 name="logo-linkedin"
+                onPress={()=>{
+                  Linking.openURL("https://www.linkedin.com/in/bhushan-a-bangera/");
+                }}
               />
-
+{/* https://github.com/delbingeorge */}
               <Ionicons
                 style={{
                   color: "#C13584",
-                  padding: "2%",
+                  padding:6,
                 }}
                 size={25}
                 name="logo-instagram"
+                onPress={()=>{
+                  Linking.openURL("https://instagram.com/_.bhushan05.__");
+                }}
               />
             </View>
           </View>
@@ -68,27 +77,36 @@ export default function DevelopersScreen() {
               <Ionicons
                 style={{
                   color: "#24292E",
-                  padding: "2%",
+                  padding:6,
                 }}
-                size={"25%"}
+                size={25}
                 name="logo-github"
+                onPress={()=>{
+                  Linking.openURL("https://github.com/delbingeorge");
+                }}
               />
 
               <Ionicons
                 style={{
                   color: "#0a66c2",
-                  padding: "2%",
+                  padding:6,
                 }}
-                size={"25%"}
+                size={25}
                 name="logo-linkedin"
+                onPress={()=>{
+                  Linking.openURL("https://www.linkedin.com/in/delbingeorge/");
+                }}
               />
               <Ionicons
                 style={{
                   color: "#C13584",
-                  padding: 2,
+                  padding:6,
                 }}
                 size={25}
                 name="logo-instagram"
+                // onPress={()=>{
+                //   Linking.openURL("https://instagram.com/_.bhushan05.__");
+                // }}
               />
             </View>
           </View>
@@ -106,7 +124,7 @@ export default function DevelopersScreen() {
               <Ionicons
                 style={{
                   color: "#24292E",
-                  padding: "2%",
+                  padding:6,
                 }}
                 size={25}
                 name="logo-github"
@@ -115,7 +133,7 @@ export default function DevelopersScreen() {
               <Ionicons
                 style={{
                   color: "#0a66c2",
-                  padding: "2%",
+                  padding:6,
                 }}
                 size={25}
                 name="logo-linkedin"
@@ -124,7 +142,7 @@ export default function DevelopersScreen() {
               <Ionicons
                 style={{
                   color: "#C13584",
-                  padding: "2%",
+                  padding:6,
                 }}
                 size={25}
                 name="logo-instagram"
