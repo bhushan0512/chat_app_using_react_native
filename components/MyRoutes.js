@@ -23,7 +23,7 @@ const MyRoutes = () => {
             
             headerBackTitleVisible: false, // Hide the back button's title
             headerShown: true, // Show the back button only
-            headerTitle:'',
+            headerTitle:"",
             headerTitleStyle:true
           })}  component={DevelopersScreen} />
       </Stack.Navigator>
